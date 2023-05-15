@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        
+       h1{
+            font-size:60px;
+        
+        }
+        #form{
+        padding: 100px 200px 300px 400px;
+         }
+         .num-input {
+        display: block;
+        width: 200px;
+        height: 50px;
+        border: 5px groove black;
+        border-radius: 30px;
+        margin-left: 120px;
+        margin-bottom: 20px;
+        padding: 8px;   
+        }
+
+        .calc-btn {
+        display: block;
+        width: 100px;
+        height: 50px;
+        border-radius: 50px;
+        border-color: brown;
+        margin-top: 40px;
+        margin-left: 175px;
+        }
+
+        h2 {
+  text-align: center;
+  padding-right: 300px;
+}
+
+    @media only screen and (max-width: 600px) {
+         h2 {
+    padding-right: 0;
+    }
+    }
+
+        @media only screen and (max-width: 600px) {
+            #form {
+              padding: 50px;
+            }
+            .num-input {
+              width: 100%;
+              margin-left: 0;
+            }
+            .calc-btn {
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+          
+    </style>
+    <title>Calculator</title> 
+</head>
+<body bgcolor="salmonblue">
+    <h1 align="center">Calculator</h1>
+    <form id="form"action="/" method="post"> <!--post means we are sending the data somewhere ,and action specifies where-->
+        
+        <input type="text" name="num1" placeholder="  First Number" class="num-input"required>
+        <h2>+</h2>
+        <input type="text" name="num2"placeholder=" Second Number" class="num-input" required>
+        <button type="submit" class="calc-btn">Addition</button>
+       
+    </form>
+   
+</body>
+</html>
